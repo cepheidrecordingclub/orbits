@@ -51,6 +51,7 @@ while(1):
         
         lonDeg= lonRad * 180 / math.pi
         step += radPerStep
+        influxdb_client.DateTimeLiteral
         
         latWrite = influxdb_client.Point("FLTA100").tag("launch_site", "Vandenberg").field("lat", latDeg)
         lonWrite = influxdb_client.Point("FLTA100").tag("launch_site", "Vandenberg").field("lon", lonDeg)
